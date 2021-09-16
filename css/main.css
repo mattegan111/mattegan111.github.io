@@ -407,7 +407,6 @@ section{
 
 .skill-card-container{
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
   align-items: flex-start;
   flex-wrap: wrap;
@@ -475,26 +474,39 @@ section{
   justify-content: center;
 }
 
-.project-cards{
+.project-card-container{
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding-top: 20px;
 }
 
 .project-card{
+  background-image: linear-gradient(
+    130deg, 
+    #000000 1%, 
+    #0e0e0e 20%, 
+    #131313 30%, 
+    #000000 99%
+    );
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  max-width: 270px;
+  margin: 20px;
+  box-shadow:  5px 5px #ff8d4b;
 }
 
 .card-img{
+  width: 270px;
 
 }
 
 .card1{
-
 }
 
 .card2{
@@ -506,15 +518,55 @@ section{
 }
 
 .card-text{
-
+  padding: 20px 20px 20px 20px;
+  text-align: justify;
 }
 
-.made-with{
+.card-description{
+  padding: 20px 0px 30px 0px;
+}
 
+.made-with-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .card-buttons{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px
+}
 
+.project-preview-btn{
+  text-decoration: none; 
+  margin: 10px 0px 10px 0px;
+  border: 0px;
+  background-color: white;
+  color: #000;
+  width: 130px;
+  padding: 10px;
+  box-shadow:  5px 5px #b16cea;
+}
+
+.project-code-btn{
+  margin: 10px 0px 10px 0px;
+  text-decoration: none; 
+  border: 0px;
+  background-color: white;
+  color: #000;
+  width: 130px;
+  padding: 10px;
+  box-shadow:  5px 5px #ff5e69;
+}
+
+.project-preview-btn:hover{
+  background-color: #e2e2e2;
+}
+
+.project-code-btn:hover{
+  background-color: #e2e2e2;
 }
 
 .live-preview{
@@ -678,16 +730,12 @@ section{
 }
 
 button{
-  margin: 5px 0px 5px 0px;
-  border: 0px;
-  background-color: white;
-  color: #000;
-  padding: 10px;
-  box-shadow:  5px 5px #ff5e69;
+
 }
 
 button:hover{
-  background-color: rgb(184, 184, 184);
+  background-color: rgb(207, 207, 207);
+  cursor: pointer;
 }
 
 button:focus{
@@ -695,7 +743,12 @@ button:focus{
 }
 
 .white-button{
-
+  margin: 5px 0px 5px 0px;
+  border: 0px;
+  background-color: white;
+  color: #000;
+  padding: 10px;
+  box-shadow:  5px 5px #ff5e69;
 }
 
 .thankyou-page{
