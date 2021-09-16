@@ -142,13 +142,22 @@ body{
 }
 
 section{
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
 }
 
 .section-container{
   padding: 60px;
   width: 80vw;
   max-width: 1080px;
+}
+
+@media screen and (max-width: 767px){
+  .section-container{
+    padding: 60px 15px 60px 15px;
+  }
 }
 
 .header {
@@ -330,6 +339,7 @@ section{
 
 .portrait{
   width: 340px;
+  max-width: 95vw;
   margin-left: 20px;
 }
 
@@ -469,7 +479,7 @@ section{
 
 .projects-section{
   background-color: var(--inverse-background-color);
-  width: 100vw;
+  /* width: 100vw; */
   display: flex;
   justify-content: center;
 }
@@ -607,11 +617,16 @@ section{
 }
 
 .resume-links{
-  padding-right: 7vw;
+  padding-right: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .resume-link{
   text-decoration: none;
+  width: 140px;
   margin: 10px 15px 10px 15px;
   border: 0px;
   background-color: black;
@@ -638,10 +653,11 @@ section{
 
 .resume-thumbnail{
   width: 350px;
+  max-width: 80vw;
 }
 
 .contact-section{
-  width: 100vw;
+  /* width: 100vw; */
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
