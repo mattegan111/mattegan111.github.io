@@ -129,6 +129,14 @@ p {
 	line-height: 1.4rem;
 }
 
+.p-bold {
+	font-weight: bold;
+}
+
+.p-italics {
+	font-style: italic;
+}
+
 .p-line-break {
 	margin: 1rem;
 }
