@@ -121,6 +121,11 @@ h5 {
 }
 
 p {
+	line-height: 1.4rem;
+}
+
+.p-line-break {
+	margin: 1rem;
 }
 
 .small-p {
@@ -154,6 +159,12 @@ section {
 	padding: 60px;
 	width: 80vw;
 	max-width: 1080px;
+}
+
+.section-container {
+	padding: 60px;
+	width: 80vw;
+	max-width: 700px;
 }
 
 @media screen and (max-width: 767px) {
@@ -663,6 +674,26 @@ section {
 	padding-bottom: 80px;
 }
 
+.bottom-padding-40 {
+	padding-bottom: 40px;
+}
+
+.bottom-padding-20 {
+	padding-bottom: 20px;
+}
+
+.bottom-margin {
+	margin-bottom: 80px;
+}
+
+.bottom-margin-40 {
+	margin-bottom: 40px;
+}
+
+.bottom-margin-20 {
+	margin-bottom: 20px;
+}
+
 .text-align-left {
 	text-align: left;
 }
@@ -766,4 +797,9 @@ button:focus {
 	height: 100vh;
 	justify-content: center;
 	align-items: center;
+}
+
+.center {
+	display: flex;
+	justify-content: center;
 }
