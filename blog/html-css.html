@@ -89,44 +89,44 @@
         <section>
             <div class="section-container-slim">
                 <div class="container">
-                    <div>
-                        <div class="section-titles bottom-margin-40">
-                            <h2><span>Introduction To The Box Model</span></h2>
-                            <h3>What is the difference between Margin, Border, and Padding?</h3>
-                        </div>
-                        <p class="p-line-break">
-                            Everything in CSS is a box. All text, images, div containers and so on are boxes (squares or rectangles) with a height and width. These boxes can be arranged on page in various ways, in relation to one another or in relation to the page itself. Today though, we will focus specifically on the box itself, and how we can manipulate the space that it takes up. The Box Model represents how the box works for any given element. Peep that model below:
-                        </p>
-                        <div class="center">
-                            <img src="../images/blog-images/html-css/Box-Model.jpg">
-                        </div>
-                        <p class="p-line-break">
-                            See the content box displayed in blue, the padding in green, border in yellow and margin in orange.
-                        </p> 
-                        <p class="p-line-break">
-                            Starting from the innermost layer, in blue, we have the content box. Here, the content within the element such as a line of text may determine the dimensions, or we can set a height or width using those CSS properties. The content box says "Here's what we've got to work with". 
-                        </p> 
-                        <p class="p-line-break"> 
-                            Padding creates space between the content box and the next layer, the border. Padding says "I'll make this box big enough so content doesn't smoosh up against the border". 
-                        </p>  
-                        <p class="p-line-break">  
-                            The border is often left undefined and would therefore not be visible to the user. It defines the gap between padding and the next outer layer. The border can be defined with a color and a pattern to create a visual effect. 
-                        </p>
-                        <p class="p-line-break"> 
-                            Margin determines how close other elements may be positioned to the box we are applying styling to. Margin says "Come no closer than 10px to this element, including it's content, padding and border". In practice, a neighbouring element with a negative value for it's own margin may result in that neighbouring element being placed closer to our element than specified by that elements margin. I would generally advise working solely in positive values for simplicity. Also, margins of two neighbouring elements will collapse, so that the largest margin of the two elements will determine the gap between the two elements.
-                        </p>
-                        <p class="p-line-break bottom-margin-40">
-                            !!! 
-                            By default, padding and border layers will add to the overall height and width of the entire box. Using the "box-sizing" property in CSS, we can change this behaviour so that padding and border are taken into consideration when rendering an element where a height and/or width CSS property is defined. Then our height and width would be rendered as a lesser value after accounting for the added height and width created by the padding and border layers.
-                            !!!
-                        </p>
+                    <div class="section-titles bottom-margin-40">
+                        <h2><span>Introduction To The Box Model</span></h2>
+                        <h3>What is the difference between Margin, Border, and Padding?</h3>
+                    </div>
+                    <p class="p-line-break">
+                        Everything in CSS is a box. All text, images, div containers and so on are boxes (squares or rectangles) with a height and width. These boxes can be arranged on page in various ways, in relation to one another or in relation to the page itself. Today though, we will focus specifically on the box itself, and how we can manipulate the space that it takes up. The Box Model represents how the box works for any given element. Peep that model below:
+                    </p>
+                    <div class="center">
+                        <img src="../images/blog-images/html-css/Box-Model.jpg">
+                    </div>
+                    <p class="p-line-break">
+                        See the content box displayed in blue, the padding in green, border in yellow and margin in orange.
+                    </p> 
+                    <p class="p-line-break">
+                        Starting from the innermost layer, in blue, we have the content box. Here, the content within the element such as a line of text may determine the dimensions, or we can set a height or width using those CSS properties. The content box says "Here's what we've got to work with". 
+                    </p> 
+                    <p class="p-line-break"> 
+                        Padding creates space between the content box and the next layer, the border. Padding says "I'll make this box big enough so content doesn't smoosh up against the border". 
+                    </p>  
+                    <p class="p-line-break">  
+                        The border is often left undefined and would therefore not be visible to the user. It defines the gap between padding and the next outer layer. The border can be defined with a color and a pattern to create a visual effect. 
+                    </p>
+                    <p class="p-line-break"> 
+                        Margin determines how close other elements may be positioned to the box we are applying styling to. Margin says "Come no closer than 10px to this element, including it's content, padding and border". In practice, a neighbouring element with a negative value for it's own margin may result in that neighbouring element being placed closer to our element than specified by that elements margin. I would generally advise working solely in positive values for simplicity. Also, margins of two neighbouring elements will collapse, so that the largest margin of the two elements will determine the gap between the two elements.
+                    </p>
+                    <p class="p-line-break bottom-margin-40">
+                        !!! 
+                        By default, padding and border layers will add to the overall height and width of the entire box. Using the "box-sizing" property in CSS, we can change this behaviour so that padding and border are taken into consideration when rendering an element where a height and/or width CSS property is defined. Then our height and width would be rendered as a lesser value after accounting for the added height and width created by the padding and border layers.
+                        !!!
+                    </p>
+                    <div class="section-container">
                         <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="ZExEERM" data-user="mattegan111" style="height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
                             <span>See the Pen <a href="https://codepen.io/mattegan111/pen/ZExEERM">
                             Untitled</a> by Matthew Egan (<a href="https://codepen.io/mattegan111">@mattegan111</a>)
                             on <a href="https://codepen.io">CodePen</a>.</span>
                         </p>
                         <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-                    </div>            
+                    </div>
                 </div>
             </div>
         </section>
