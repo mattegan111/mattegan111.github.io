@@ -76,6 +76,11 @@ h3 {
 	text-align: center;
 }
 
+.h3-no-link {
+	text-decoration: unset;
+	color: unset;
+}
+
 @media screen and (max-width: 1130px) {
 	h3 {
 		font-size: 1.6rem;
