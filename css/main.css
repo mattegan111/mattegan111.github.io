@@ -220,16 +220,27 @@ section {
 	max-width: 1280px;
 }
 
+.nav-section {
+	width: 100%;
+	position: sticky;
+	top: 0;
+	background-color: white;
+}
+
 .header {
 }
 
-.nav {
+nav {
+	display: flex;
+	justify-content: center;
 }
 
 .nav-container {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	width: 80vw;
+	max-width: 1080px;
 	padding: 20px 60px 20px 60px;
 	z-index: 1;
 	position: relative;
@@ -262,6 +273,7 @@ section {
 	align-items: center;
 	width: 66%;
 	list-style-type: none;
+	margin: 0;
 }
 
 .menu-link {
