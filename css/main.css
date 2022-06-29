@@ -169,6 +169,10 @@ li {
 	margin-bottom: 0.3rem;
 }
 
+.p-parent p {
+	margin: 1rem;
+}
+
 .a-contents {
 	display: contents;
 }
