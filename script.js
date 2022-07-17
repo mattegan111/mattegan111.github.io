@@ -10,7 +10,7 @@ hamburgerMenu.addEventListener('click', () => {
   console.log('click!')
 })
 
-import * as THREE from '/build/three.module.js';
+import * as THREE from 'three';
 
 const scene = new THREE.Scene();
 
