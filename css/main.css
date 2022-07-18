@@ -20,6 +20,8 @@ canvas {
     display: block; /* fix necessary to remove space at bottom of canvas */
 	position: absolute;
 	z-index: -1;
+	max-width: 90vw;
+	max-height: calc(1.22 * 90vw); /* 1.22 represents the ratio of the renderer*/
 }
 
 @media screen and (min-width: 1200px) {
