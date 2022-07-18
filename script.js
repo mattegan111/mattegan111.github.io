@@ -27,11 +27,13 @@ camera.position.setZ(14);
 
 renderer.render(scene, camera);
 
-const geometryIcosahedron = new THREE.IcosahedronGeometry(5, 0);
-const materialIcosahedron = new THREE.MeshStandardMaterial({ color: 0xb16cea });
-const meshIcosahedron = new THREE.Mesh(geometryIcosahedron, materialIcosahedron);
+const geometryBox = new THREE.BoxGeometry(5, 5, 5);
+const materialBox = new THREE.MeshStandardMaterial({ color: 0xb16cea });
+const meshBox = new THREE.Mesh(geometryBox, materialBox);
+meshBox.position.setX(-1);
 
-scene.add(meshIcosahedron);
+
+scene.add(meshBox);
 
 const pointLight = new THREE.PointLight(0xffffff);
 pointLight.position.set(20,20,20);
@@ -49,9 +51,9 @@ scene.add(pointLight, ambientLight);
 function animate() {
   requestAnimationFrame(animate);
 
-  meshIcosahedron.rotation.x += 0.0018;
-  meshIcosahedron.rotation.y += 0.001;
-  meshIcosahedron.rotation.z += 0.0018;
+  meshBox.rotation.x += 0.0018;
+  meshBox.rotation.y += 0.001;
+  meshBox.rotation.z += 0.0018;
 
   renderer.render(scene, camera);
 }
