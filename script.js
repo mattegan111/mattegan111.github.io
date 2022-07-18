@@ -30,8 +30,9 @@ renderer.render(scene, camera);
 const geometryBox = new THREE.BoxGeometry(5, 5, 5);
 const materialBox = new THREE.MeshStandardMaterial({ color: 0xb16cea });
 const meshBox = new THREE.Mesh(geometryBox, materialBox);
-meshBox.position.setX(-0.5);
-
+if(window.innerWidth > 350){
+  meshBox.position.setX(-0.5);
+}
 
 scene.add(meshBox);
 
