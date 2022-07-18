@@ -12,8 +12,6 @@ hamburgerMenu.addEventListener('click', () => {
 
 import * as THREE from 'https://unpkg.com/three@0.127.0/build/three.module.js';
 
-import { OrbitControls } from 'https://unpkg.com/three@0.127.0/examples/jsm/controls/OrbitControls.js';
-
 const scene = new THREE.Scene();
 scene.background = new THREE.Color( 0xffffff );
 
@@ -48,56 +46,12 @@ scene.add(pointLight, ambientLight);
 // const gridHelper = new THREE.GridHelper(200, 50, 0xff0000);
 // scene.add(lightHelper, gridHelper);
 
-const controls = new OrbitControls(camera, renderer.domElement)
-
-function addStar(){
-  const geometryStar = new THREE.SphereGeometry(0.25, 24, 24);
-  const materialStar = new THREE.MeshStandardMaterial({color: 0xffffff});
-  const meshStar = new THREE.Mesh(geometryStar, materialStar);
-
-  let proximityCounter = 0;
-  let [x, y, z] = Array(3).fill().map(() => {
-    // create random positive value
-    let randPosition = THREE.MathUtils.randFloatSpread(800);
-    // if the coordinate is close to our centre, note that by incrementing proximityCounter
-    if (Math.abs(randPosition) < 100){ proximityCounter++; }
-    // if all three dimensions are close to our centre, recalculate c
-    if(proximityCounter === 3){ 
-      randPosition = THREE.MathUtils.randFloat(100, 800); 
-      if(Math.floor(Math.random() * 2) === 0){ randPosition *= -1; }
-    }
-
-    return randPosition;
-  });
-
-  meshStar.position.set(x, y, z);
-  scene.add(meshStar);
-}
-
-Array(5000).fill().forEach(addStar);
-
-const moonTexture = new THREE.TextureLoader().load('moon.jpg');
-
-const moon = new THREE.Mesh(
-  new THREE.SphereGeometry(1),
-  new THREE.MeshStandardMaterial({ map: moonTexture })
-);
-
-moon.position.set(-8, 8, -5);
-scene.add(moon);
-
-
 function animate() {
   requestAnimationFrame(animate);
 
   meshIcosahedron.rotation.x += 0.005;
   meshIcosahedron.rotation.y += 0.0025;
   meshIcosahedron.rotation.z += 0.005;
-
-  moon.rotation.y -= 0.005;
-  moon.rotation.z -= 0.001;
-
-  controls.update();
 
   renderer.render(scene, camera);
 }
