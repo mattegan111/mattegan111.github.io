@@ -28,7 +28,7 @@ camera.position.setZ(13);
 renderer.render(scene, camera);
 
 const geometryBox = new THREE.BoxGeometry(5, 5, 5);
-const materialBox = new THREE.MeshStandardMaterial({ color: 0xb16cea });
+const materialBox = new THREE.MeshStandardMaterial({ color: 0xB27BE5 });
 const meshBox = new THREE.Mesh(geometryBox, materialBox);
 if(window.innerWidth > 400){
   meshBox.position.setX(-0.5);
@@ -39,7 +39,7 @@ scene.add(meshBox);
 const pointLight = new THREE.PointLight(0xffffff);
 pointLight.position.set(20,20,20);
 
-const ambientLight = new THREE.AmbientLight(0xffffff, 0.125);
+const ambientLight = new THREE.AmbientLight(0xffffff, 0.25);
 
 scene.add(pointLight, ambientLight);
 
