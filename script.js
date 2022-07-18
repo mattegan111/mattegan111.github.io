@@ -19,6 +19,7 @@ const camera = new THREE.PerspectiveCamera( 45, 320 / 390, 0.1, 1000);
 
 const renderer = new THREE.WebGLRenderer({
   canvas: document.querySelector('#bg'),
+  antialias: true
 });
 
 renderer.setPixelRatio(window.devicePixelRatio);
