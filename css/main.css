@@ -429,6 +429,13 @@ nav {
 	margin-right: auto;
 }
 
+
+@media screen and (min-width: 1000px) {
+  .hero-left{
+    padding-bottom: 40px;
+  }
+}
+
 /* 
 @media screen and (max-width: 780px) {
   .hero-left{
@@ -450,6 +457,12 @@ nav {
 	align-items: center;
 	min-width: 40%;
 	max-width: 320px;
+}
+
+@media screen and (max-width: 1000px) {
+  .hero-right{
+    margin-bottom: -50px;
+  }
 }
 
 /* @media screen and (max-width: 780px) {
