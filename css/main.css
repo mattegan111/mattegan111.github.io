@@ -16,6 +16,10 @@
 	font-family: "Plus Jakarta Display", sans-serif;
 }
 
+canvas {
+    display: block; /* fix necessary to remove space at bottom of canvas */
+}
+
 .fas {
 	margin-right: 4px;
 }
