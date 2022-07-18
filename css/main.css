@@ -28,6 +28,12 @@ canvas {
 	}
 }
 
+@media screen and (max-width: 340px) {
+	canvas {
+		padding-left: 7px;
+	}
+}
+
 .fas {
 	margin-right: 4px;
 }

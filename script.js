@@ -15,14 +15,14 @@ import * as THREE from 'https://unpkg.com/three@0.127.0/build/three.module.js';
 const scene = new THREE.Scene();
 scene.background = new THREE.Color( 0xffffff );
 
-const camera = new THREE.PerspectiveCamera( 45, 320 / 400, 0.1, 1000);
+const camera = new THREE.PerspectiveCamera( 45, 320 / 390, 0.1, 1000);
 
 const renderer = new THREE.WebGLRenderer({
   canvas: document.querySelector('#bg'),
 });
 
 renderer.setPixelRatio(window.devicePixelRatio);
-renderer.setSize(320, 400);
+renderer.setSize(320, 390);
 camera.position.setZ(13);
 
 renderer.render(scene, camera);
