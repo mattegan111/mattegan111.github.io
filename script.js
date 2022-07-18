@@ -49,9 +49,9 @@ scene.add(pointLight, ambientLight);
 function animate() {
   requestAnimationFrame(animate);
 
-  meshIcosahedron.rotation.x += 0.005;
-  meshIcosahedron.rotation.y += 0.0025;
-  meshIcosahedron.rotation.z += 0.005;
+  meshIcosahedron.rotation.x += 0.0018;
+  meshIcosahedron.rotation.y += 0.001;
+  meshIcosahedron.rotation.z += 0.0018;
 
   renderer.render(scene, camera);
 }
