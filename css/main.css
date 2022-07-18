@@ -457,6 +457,9 @@ nav {
 	.portrait {
 		margin-right: auto;
 	}
+	canvas {
+		padding-right: 40px;
+	}
 }
 
 .hero-btns {
